@@ -81,6 +81,6 @@
 ## 실행 방법
 
 ```bash
-git clone https://github.com/minkw10231233/packup.git
+git clone https://github.com/minkw10231233/pack-up.git
 cd packup
 open index.html
