@@ -1,0 +1,73 @@
+        .comp {
+            margin-top: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 18px 60px;
+        }
+
+        .comp-card {
+            width: min(720px, 100%);
+            padding: 28px 22px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 16px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .comp-badge {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 12px;
+            border-radius: 999px;
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            border: 1px solid rgba(0,0,0,0.12);
+        }
+
+        .comp-title {
+            margin: 0 0 10px;
+            font-size: 24px;
+            letter-spacing: -0.3px;
+        }
+
+        .comp-desc {
+            margin: 0 auto 18px;
+            line-height: 1.6;
+            max-width: 52ch;
+            opacity: 0.85;
+        }
+
+        .comp-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .comp-home {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            background: #0f1624;
+            color: #fff;
+        }
+
+        .rewrite {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            border: 1px solid rgba(0,0,0,0.12);
+            background: #fff;
+            color: #111;
+        }
