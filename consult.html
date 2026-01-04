@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상담 신청하기</title>
+
+  <link rel="stylesheet" href="../css/consult.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+   <header class="site-header">
+    <nav class="navbar" aria-label="주요 메뉴">
+      <a href="index.html" class="logo" aria-label="PackUp 홈으로">
+        <img src="../img/delivery.png" alt="PackUp 로고" />
+        <span>PackUp</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="메뉴 열기">☰</button>
+
+      <button class="close-toggle" id="close-toggle" type="button" aria-label="메뉴 닫기" style="display:none;">✕</button>
+
+      <div class="navbar2" id="navbar2" hidden>
+        <ul class="t-row">
+          <li>
+            <a href="../html/onlyDrive.html" class="menu-pill">
+              <span class="menu-text">운전만</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/onehelp.html" class="menu-pill">
+              <span class="menu-text">1인 도움</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/twohelp.html" class="menu-pill">
+              <span class="menu-text">2인 도움</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/package.html" class="menu-pill">
+              <span class="menu-text">완전포장이사</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="t-row">
+          <li>
+            <a href="../html/one-half.html" class="menu-pill">
+              <span class="menu-text">1인 반포장</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/two-half.html" class="menu-pill">
+              <span class="menu-text">2인 반포장</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/office.html" class="menu-pill">
+              <span class="menu-text">사무실이사</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/inquiry.html" class="menu-pill">
+              <span class="menu-text">견적문의</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="t-row">
+          <li>
+            <a href="../html/introduce.html" class="menu-pill wide">
+              <span class="menu-text">회사소개</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/recruit.html" class="menu-pill wide">
+              <span class="menu-text">기사님 모집</span>
+              <span class="menu-arrow">›</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../html/consult.html" class="menu-cta" aria-current="page">상담 신청하기</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="wrap">
+      <div class="grid">
+        <section class="card" aria-labelledby="pageTitle">
+          <h1 id="pageTitle" class="title">상담 신청하기</h1>
+          <p class="sub">
+            아래 내용을 남겨주시면 확인 후 연락드릴게요.
+          </p>
+
+          <form class="form" id="consultForm" novalidate>
+            <div class="row">
+              <div class="field">
+                <label for="name">이름</label>
+                <input id="name" name="name" type="text" placeholder="예: 민경원" required />
+                <p class="error" data-error-for="name"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">연락처</label>
+                <input id="phone" name="phone" type="tel" placeholder="예: 010-1234-5678" required />
+                <p class="error" data-error-for="phone"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="email">이메일</label>
+                <input id="email" name="email" type="email" placeholder="예: you@email.com" />
+                <p class="error" data-error-for="email"></p>
+              </div>
+
+              <div class="field">
+                <label for="category">상담 유형</label>
+                <select id="category" name="category" required>
+                  <option value="" selected disabled>선택해주세요</option>
+                  <option value="portfolio">포트폴리오 피드백</option>
+                  <option value="frontend">프론트엔드(코드/구현) 상담</option>
+                  <option value="uiux">UI/UX 개선 상담</option>
+                  <option value="other">기타</option>
+                </select>
+                <p class="error" data-error-for="category"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="date">희망 날짜</label>
+                <input id="date" name="date" type="date" />
+              </div>
+
+              <div class="field">
+                <label for="time">희망 시간</label>
+                <input id="time" name="time" type="time" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">상담 내용</label>
+              <textarea id="message" name="message" placeholder="상담 받고 싶은 내용/상황/목표를 적어주세요." required></textarea>
+              <p class="error" data-error-for="message"></p>
+            </div>
+
+            <div class="checkline">
+              <input id="agree" name="agree" type="checkbox" required />
+              <label for="agree" class="agreeText">
+                (필수) 개인정보 수집 및 이용에 동의합니다.
+              </label>
+            </div>
+            <p class="error" data-error-for="agree"></p>
+
+            <div class="actions">
+              <button class="submit" type="submit">상담 신청 제출</button>
+              <a class="cons-home" href="index.html">홈으로</a>
+            </div>
+          </form>
+        </section>
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <ul>
+        <li><a href="https://example.com" class="footer-link">개인정보취급방침</a></li>
+        <li><a href="https://example.com" class="footer-link">이메일수집거부</a></li>
+        <li><a href="https://example.com" class="footer-link">취소 및 환불규정</a></li>
+      </ul>
+
+      전국용달화물㈜ 대표 : 연규성 사업자등록번호 : 214-87-86364 통신판매번호 : 2011-경기안산-0576<br />
+      [서울 영업소] 서울 서초구 양재동 화물터미널<br />
+      [본점] 경기도 안산시 단원구 광덕4로 250 (고잔동, 씨티프라자)<br />
+      [청주 지점] 청주시 상당구 무농정로 48, 2층(용암동)<br />
+      [문의] 전국 어디서든 상담 가능합니다 TEL : 1800-3324<br />
+      Copyright by 2022 전국용달화물㈜ . All Right Reserved.<br />
+      전국용달화물(주)는 온/오프라인상 서비스의 알선(주선)에 대한 업무만 하며 모든 계약내용 및 관련된 법적 책임은 서비스 제공 운송사업자와 고객(계약당사자)간에 있습니다.<br />
+      중개업체특성상 계약 후에 통신판매의뢰자에게 배정이되기 때문에 계약 후에 소비자(계약자)에게 의뢰자의 정보를 배정 즉시 고지 해드립니다.
+      (통신판매중개의뢰자들은 운송전일에 연락가능하며 그 이전에 연락 시 당사로 문의주시기 바랍니다)
+      <br /><br />
+      <strong>*예약금 공식계좌*</strong><br />
+      국민은행 999-1577-1772 전국용달화물(주)<br />
+      (공식 계좌 외 타 계좌로 입금 시 계약이 되지 않습니다. 그에 따른 문제는 절대 책임지지 않습니다.)
+    </div>
+  </footer>
+
+
+  <script src="../js/consult.js"></script>
+  <script src="../js/script.js"></script>
+
+</body>
+</html>
