@@ -45,6 +45,8 @@
             padding: 0;
         }
 
+        .menu-open { overflow: hidden; }
+
         .menu-toggle,
         .close-toggle {
             position: absolute;
