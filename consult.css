@@ -156,7 +156,7 @@
             border:none;
             background:#0f1624;
             color:#fff;
-            padding:12px 205px;
+            padding:12px 170px;
             border-radius:12px;
             font-weight:800;
             cursor:pointer;
@@ -168,7 +168,7 @@
             border:1px solid var(--line);
             background:#fff;
             color:var(--text);
-            padding:12px 14px;
+            padding:12px 50px;
             border-radius:12px;
             font-weight:800;
             cursor:pointer;
@@ -189,6 +189,9 @@
 @media (max-width: 1024px){
         .submit {
             padding:12px 135px;
+        }
+        .cons-home{
+            padding:12px 14px;
         }
     }
 @media (max-width: 850px){
