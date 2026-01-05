@@ -23,13 +23,6 @@
             padding:18px 18px;
         }
 
-        .topbar {
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:12px;
-        }
-
         .btn {
             appearance:none;
             border:1px solid var(--line);
@@ -76,9 +69,10 @@
             grid-template-columns: 1fr 1fr;
             gap:12px;
         }
-
-@media (max-width: 600px){
-        .main .wrap{ padding:60px 0px 60px; }
+        .label-left {
+            margin-left: 15px;
+            text-align: left;
+            justify-self: start;
         }
 
         .field label{
@@ -162,7 +156,7 @@
             border:none;
             background:#0f1624;
             color:#fff;
-            padding:12px 14px;
+            padding:12px 205px;
             border-radius:12px;
             font-weight:800;
             cursor:pointer;
@@ -190,3 +184,16 @@
             font-size:12px;
             padding:18px 0 26px;
         }
+
+
+@media (max-width: 1024px){
+        .submit {
+            padding:12px 135px;
+        }
+    }
+@media (max-width: 850px){
+    .main .wrap{ padding:60px 0px 60px; }
+    
+}
+
+        
