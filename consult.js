@@ -50,15 +50,15 @@
     if (!name) { setError("name", "이름을 입력해주세요."); ok = false; }
 
     if (!phone) { setError("phone", "연락처를 입력해주세요."); ok = false; }
-    else if (!isValidPhone(phone)) { setError("phone", "연락처 형식이 올바르지 않아요."); ok = false; }
+    else if (!isValidPhone(phone)) { setError("phone", "연락처 형식이 올바르지 않습니다."); ok = false; }
 
-    if (!isValidEmail(email)) { setError("email", "이메일 형식이 올바르지 않아요."); ok = false; }
+    if (!isValidEmail(email)) { setError("email", "이메일 형식이 올바르지 않습니다."); ok = false; }
 
-    if (!category) { setError("category", "상담 유형을 선택해주세요."); ok = false; }
+    if (!category) { setError("category", "상담 유형을 선택해주십시오."); ok = false; }
 
-    if (!message) { setError("message", "상담 내용을 입력해주세요."); ok = false; }
+    if (!message) { setError("message", "상담 내용을 입력해주십시오."); ok = false; }
 
-    if (!agree) { setError("agree", "동의 체크가 필요해요."); ok = false; }
+    if (!agree) { setError("agree", "동의 체크가 필요합니다."); ok = false; }
 
     return ok;
   }
