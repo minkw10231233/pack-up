@@ -58,7 +58,7 @@
 
     if (!message) { setError("message", "상담 내용을 입력해주십시오."); ok = false; }
 
-    if (!agree) { setError("agree", "동의 체크가 필요합니다."); ok = false; }
+    if (!agree) { setError("agree", "개인정보 이용 동의가 필요합니다."); ok = false; }
 
     return ok;
   }
